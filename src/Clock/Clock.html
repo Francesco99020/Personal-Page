@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <link rel="stylesheet" href="Clock.css">
+</head>
+<body>
+    <div class="analog-clock-container">
+    <div id="analog-clock-background">
+        <div id="analog-clock-12">12</div>
+        <div id="analog-clock-3">3</div>
+        <div id="analog-clock-6">6</div>
+        <div id="analog-clock-9">9</div>
+        <div id="analog-clock-sec-hand"></div>
+        <div id="analog-clock-min-hand"></div>
+        <div id="analog-clock-hr-hand"></div>
+    </div>
+    <div id="analog-clock-center"></div>
+</div>
+
+    <input type="image" onclick="confirmChanges()" class="confirmBtn changeTime timeChange" id="confirm" src="images/check_mark.png">
+    <div class="wrapper">
+    
+        <div class="changeTime timeChange" id="hour-increment-count">
+            <input type="image" onclick="changeHour(id)" class="image-style" id="hour-up-arrow" src="images/up_arrow.png">
+        </div>
+        <div class="changeTime timeChange" id="minute-increment-count">
+            <input type="image" onclick="changeMinute(id)" class="image-style" id="minute-up-arrow" src="images/up_arrow.png">
+        </div>
+        <div class="changeTime timeChange" id="second-increment-count">
+            <input type="image" onclick="changeSecond(id)" class="image-style" id="second-up-arrow" src="images/up_arrow.png">
+        </div>
+    
+
+        <div class="time" id="hours">12</div>
+        <div class="time" class="spacer" id="spacer1">:</div>
+        <div class="time" id="minutes">00</div>
+        <div class="time" class="spacer" id="spacer2">:</div>
+        <div class="time" id="seconds">00</div>
+        <div class="time" id="meridiem">pm</div>
+
+    
+        <div class="changeTime timeChange" id="hour-decrement-count">
+            <input type="image" onclick="changeHour(id)" class="image-style" id="hour-down-arrow" src="images/down_arrow.png">
+        </div>
+        <div class="changeTime timeChange" id="minute-decrement-count">
+            <input type="image" onclick="changeMinute(id)" class="image-style" id="minute-down-arrow" src="images/down_arrow.png">
+        </div>
+        <div class="changeTime timeChange" id="second-decrement-count">
+            <input type="image" onclick="changeSecond(id)" class="image-style" id="second-down-arrow" src="images/down_arrow.png">
+        </div>
+</div>
+    <div id="controls">
+        <button id="start" onclick="runClock()">Start Clock</button>
+        <button id="reset" onclick="resetClock()">Reset Clock</button>
+        <button id="stop">Stop Clock</button>
+        <button id="change" onclick="changeTime()">Change Time</button>
+    </div>
+    <script src="Clock.js"></script>    
+</body>
+</html>

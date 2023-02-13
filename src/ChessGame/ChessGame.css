@@ -1,0 +1,100 @@
+*{
+    margin-top: 0;
+    margin-left: 0;
+}
+body{
+    position: relative;
+    overflow-y: hidden;
+}
+.header{
+    position: relative;
+    margin: 3vh auto;
+    clear: left;
+    height: auto;
+    text-align: center;
+    min-height: 30px;
+    max-height: 30px;
+}
+#announcer{
+    font-family: georgia, Arial, Helvetica, sans-serif;
+}
+#sub-announcer{
+
+}
+#extraPieceStorage{
+    position: absolute;
+    visibility: hidden;
+}
+/* #white-collection-tray{
+    position: absolute;
+    height: 80vh;
+    width: 10vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    background-color: pink;
+} */
+.wrapper{
+    position: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 10vh;
+    width: 80vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
+}
+.tile{
+    width: 20px;
+    height: 20px;
+    background-origin: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.even{
+    background-color: white;
+    border: 1px solid black;
+}
+.odd{
+    background-color: rgb(64, 0, 255);;
+    border: 1px solid black;
+}
+.possibleMove{
+    background-color: orange;
+}
+#promotionMenu{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 40vh;
+    width: 40vw;
+    visibility: hidden;
+    background-color: white;
+    color: black;
+    background-color: brown;
+    border: 10px rgb(63, 9, 9) outset;
+}
+#promotionMenu h1{
+    display: flex;
+    justify-content: center;    
+}
+#promotionMenu ul{
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15%;
+}
+#promotionMenu li{
+    float: center;
+    align-items: center;
+    cursor: pointer;
+}
+#promotionMenu svg{
+    display: block;
+    text-align: center;
+}
