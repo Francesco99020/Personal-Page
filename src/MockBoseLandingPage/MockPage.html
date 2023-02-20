@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphone Landing Page</title>
+    <link href="./MockPage.css" rel="StyleSheet" />
+</head>
+<body>
+    <header class="Header">
+        <img class="Header-Logo" src="./Images/Bose_logo.png" alt="logo" />
+        <div class="Header-Buttons">
+            <h3 class="Header-Button" onclick="scrollToAboutSection()">About</h3>
+            <h3 class="Header-Button" onclick="scrollToFeaturesSection()">Feature</h3>
+            <h3 class="Header-Button" onclick="scrollToReviewSection()">Reviews</h3>
+        </div>
+    </header>
+
+    <div class="Banner">
+        <img class="Banner-Image" src="./Images/Black-Bose.png" alt="white bose" />
+        <div class="Banner-TextHolder">
+            <h1 class="Banner-Title">Bose Noise Cancelling Headphones 700</h1>
+            <h2 class="Banner-Subtitle">Better Sound Through Research</h2>
+        </div>
+    </div>
+
+    <div class="skicky-header-nav">
+        <h3 class="Sticky-header-button" onclick="scrollToAboutSection()">About</h3>
+        <h3 class="Sticky-header-button"onclick="scrollToFeaturesSection()">Features</h3>
+        <h3 class="Sticky-header-button" onclick="scrollToReviewSection()">Reviews</h3>
+    </div>
+
+    <div id="about" class="About-Section">
+        <h1 class="About-Main-h1">
+            <b>PREMIUM QUIET. BOLD SOUND.</b>
+        </h1>
+        <p class="About-Main-p">World-class adjustable noise cancellation — with situational awareness for when you want to let the world in. High-fidelity audio with adjustable EQ so you can tune music to your liking. Unrivaled voice pickup for the clearest calls. And protein leather cushions for all-day comfort. It’s everything you demand from wireless Bluetooth headphones — amplified.</p>
+
+    </div>
+
+    <div id="pricing" class="Pricing-Section">
+        <div class="display">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+            
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="./Images/Pricing-Image-1.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="./Images/Pricing-Image-2.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="./Images/Pricing-Image-3.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./Images/Pricing-Image-4.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="./Images/Pricing-Image-5.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="./Images/Pricing-Image-6.webp" style="width:100%">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="width: 100%; text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+        <div class="Product-Details">
+            <h1 class="Product-Title"><b>Bose Noise Cancelling Headphones 700</b></h1>
+            <div class="Product-Rating">
+                <h2 class="Product-Star-Rating">★★★★☆</h2>
+                <p class="Product-Rating-Number">4.0</p>
+                <p class="Product-Number-Of-Reviews">(1539)</p>
+            </div>
+            <h1 class="Product-Price">$329.00</h1>
+            <div class="Product-Buttons">
+                <div class="Product-Buy-Now">
+                    <h2 class="Product-Buy-Text">Buy Now</h2>
+                    <div class="Product-Color-Selection">
+                        <div class="SelectedProductBackground" id="Product-Black-Background" >
+                            <div onclick="SetBlack()" class="Product-Black"></div>
+                        </div>
+                        <div id="Product-White-Background" >
+                            <div onclick="SetWhite()" class="Product-White">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="features" class="Feature-Section">
+        <div class="Features"><!--1-->
+            <div class="Feature-Text">
+                <div class="Feature-Header">
+                    <img class="Feature-Icon" src="./Images/Noise-Cancelling-Icon.png" alt="Noise Cancelling" />
+                    <h2 class="Feature-Title">ADJUSTABLE WORLD-CLASS NOISE CANCELLING</h2>
+                </div>
+                <p class="Feature-Description">Our proprietary active noise cancelling technology uses microphones both inside and outside the earcups to monitor the sounds around you and instantly produce an opposite signal to cancel them out. With adjustable noise cancelling, you can control how much — or how little — of the outside world you hear. Plus, Conversation Mode lets you simultaneously adjust noise cancelling and pause your music for a quick chat.</p>
+            </div>
+            <img class="Feature-Photo" src="./Images/Noise-Cancelling-Image.jpeg" alt="Noise Cancelling" />
+        </div>
+        <div class="Features"><!--2-->
+            <img class="Feature-Photo" src="./Images/Features-Image-2.webp" alt="Noise Cancelling" />
+            <div class="Feature-Text">
+                <div class="Feature-Header">
+                    <img class="Feature-Icon" src="./Images/Volume-Icon.png" alt="High-Fidelity Audio" />
+                    <h2 class="Feature-Title">HIGH-FIDELITY AUDIO</h2>
+                </div>
+                <p class="Feature-Description">Whether it’s music, videos, or your favorite podcast, get closer to whatever you love with Bose Headphones 700. A combination of exclusive Bose technologies works together to deliver big audio from a small package, sound that stays consistent at any volume, and acoustic noise reduction, which gives you a blank canvas for your music or tuning out the world.</p>
+            </div>
+        </div>
+        <div class="Features"><!--3-->
+            <div class="Feature-Text">
+                <div class="Feature-Header">
+                    <img class="Feature-Icon" src="./Images/Microphone-Icon.png" alt="Unrivaled Voice Pickup" />
+                    <h2 class="Feature-Title">UNRIVALED VOICE PICKUP</h2>
+                </div>
+                <p class="Feature-Description">Let’s face it, your calls are important. Our revolutionary mic system is engineered for making and taking calls — even in less-than-ideal conditions. Six mics work together to cancel the noise around you so you can hear the caller better, while four mics combine to suppress the most disruptive remaining sound around you so the caller can hear you better. No other headphones today can deliver a performance like this.</p>
+            </div>
+            <img class="Feature-Photo" src="./Images/Feature-Image-3.avif" alt="Noise Cancelling" />
+        </div>
+        <div class="Features"><!--4-->
+            <img class="Feature-Photo" src="./Images/Feature-Image-4.jpg" alt="Noise Cancelling" />
+            <div class="Feature-Text">
+                <div class="Feature-Header">
+                    <img class="Feature-Icon" src="./Images/Touch-Icon.png" alt="Capacitive Touch Controls" />
+                    <h2 class="Feature-Title">CAPACITIVE TOUCH CONTROLS</h2>
+                </div>
+                <p class="Feature-Description">Capacitive touch controls make Headphones 700 easy to use. The right earcup features capacitive touch sensors, so you can manage volume, calls, and music without looking at your phone. Low-profile buttons control the power, noise cancelling presets, and your phone’s default voice assistant, like Siri, or Google Assistant and Alexa — to allow fast and effortless access to music, messages, and information.</p>
+            </div>
+        </div>
+        <div class="Features"><!--5-->
+            <div class="Feature-Text">
+                <div class="Feature-Header">
+                    <img class="Feature-Icon" src="./Images/Headphone-Icon.png" alt="Streamlined Lightweight Design" />
+                    <h2 class="Feature-Title">STREAMLINED LIGHTWEIGHT DESIGN</h2>
+                </div>
+                <p class="Feature-Description">The luxury is in the details. That’s why we choose materials with meticulous care for Headphones 700. Our ear cushions are made from plush protein leather for long listening sessions. Our earcups are tilted at 15 degrees to mirror the anatomy of the human head and ears. And the secure steel headband is designed to fit comfortably on your head with an underside of soft silicone-covered foam.</p>
+            </div>
+            <img class="Feature-Photo" src="./Images/Feature-Image-5.png" alt="Noise Cancelling" />
+        </div>
+        <div class="Features"><!--6-->
+            <img class="Feature-Photo" src="./Images/Feature-Image-6.jpg" alt="Noise Cancelling" />
+            <div class="Feature-Text">
+                <div class="Feature-Header">
+                    <img class="Feature-Icon" src="./Images/Bluetooth-Icon.png" alt="Reliable Blurtooth connectivity" />
+                    <h2 class="Feature-Title">RELIABLE BLUETOOTH® CONNECTIVITY</h2>
+                </div>
+                <p class="Feature-Description">Connecting wirelessly to your devices is simple and reliable. Bose Headphones 700 have a Bluetooth range of up to 30 feet and can pair with two devices at once — meaning you can quickly go from listening to a playlist on your phone to taking a conference call on your laptop.</p>
+            </div>
+        </div>
+        <div class="Features"><!--7-->
+            <div class="Feature-Text">
+                <div class="Feature-Header">
+                    <img class="Feature-Icon" src="./Images/Chat-Icon.png" alt="Built-in Voice Controls" />
+                    <h2 class="Feature-Title">BUILT-IN VOICE CONTROL</h2>
+                </div>
+                <p class="Feature-Description">Want a weather forecast, a little info, or need to add to a shopping list? Just say the Amazon Alexa wake word or press a button to access Google Assistant and ask.* Or access your phone’s default voice assistant, like Siri.
+
+                </p>
+            </div>
+            <img class="Feature-Photo" src="./Images/Feature-Image-7.webp" alt="Noise Cancelling" />
+        </div>
+        <div class="Features"><!--8-->
+            <img class="Feature-Photo" src="./Images/Feature-Image-8.jpg" alt="Noise Cancelling" />
+            <div class="Feature-Text">
+                <div class="Feature-Header">
+                    <img class="Feature-Icon" src="./Images/Battery-Icon.png" alt="Up To 20 Hours" />
+                    <h2 class="Feature-Title">UP TO 20 HOURS</h2>
+                </div>
+                <p class="Feature-Description">Bose Headphones 700 deliver up to 20 hours of wireless play time on a single charge. And if you’re running low, a quick 15-minute charge will provide up to 2 hours so you can keep your favorites playing all day long.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="review" class="Review-Section">
+        <div class="Review-Header">
+            <h1 class="Review-Title">STILL NEED CONVINCING</h1>
+            <h2 class="Review-Subtitle">READ REVIEWS FROM REAL CUSTOMERS</h2>
+        </div>
+        <div class="Review-Container">
+            <div class="Review-Card">
+                <img class="Review-Card-Profile" src="./Images/Profile-Picture-1.jpg" alt="profile"/>
+                <div class="Review-Card-Header">
+                    <p class="Review-Card-Rating">★★★★★</p>
+                    <p class="Review-Card-date">3 days ago</p>
+                </div>
+                <div class="Review-Card-Body">
+                    <h3 class="Review-Card-Title">Best headphones i've EVER owned</h3>
+                    <p class="Review-Card-Review">I deal with a slight hearing loss so I tend to turn my music and Tv up when Im listing to them. My Bose 700 headphones now connect to everything I own with the push of a button and alleviate that. I mix music and videos so now I can work and play with out disturbing my family and friends. I can work for hours and not get head clamp pain. If you'r on the fence or hesitant ~ Stop, Pick up a pair and see what you haven't been hearing and feeling. I have everything from (2) pair's of Bose 901's dating back to 1979 to the (2) Bose L1M2 towers and (2) B2 Bases. Life is Better listening an hearing it through Bose.</p>
+                </div>
+            </div>
+            <div class="Review-Card">
+                <img class="Review-Card-Profile" src="./Images/Profile-Picture-2.jpeg" alt="profile"/>
+                <div class="Review-Card-Header">
+                    <p class="Review-Card-Rating">★★★★★</p>
+                    <p class="Review-Card-date">3 years ago</p>
+                </div>
+                <div class="Review-Card-Body">
+                    <h3 class="Review-Card-Title">Great sound quality!</h3>
+                    <p class="Review-Card-Review">I've have these head phones for 3 years now and the quality is perfect that smoothly balances bass while still able to focus on each individual instrument sound and noise canceling is phenomenal! I ended up buying a second pair because they are so great! Touch controls are very easy and convenient to use as well. Highly recommend!</p>
+                </div>
+            </div>
+            <div class="Review-Card">
+                <img class="Review-Card-Profile" src="./Images/Profile-Picture-3.jpeg" alt="profile"/>
+                <div class="Review-Card-Header">
+                    <p class="Review-Card-Rating">★★★★☆</p>
+                    <p class="Review-Card-date">26 days ago</p>
+                </div>
+                <div class="Review-Card-Body">
+                    <h3 class="Review-Card-Title">Excellent for travel</h3>
+                    <p class="Review-Card-Review">I recently used my Bose cancelling headphones 700 when I travelled to Asia for 16 hours. I love it. It truly delivered a crisp sound with the option of full noise cancelling and half of the noise. It was comfortable to use and I did not feel that it was heating my ears as I used it for my entire trip. It was easy to use and connected to both my iPhone and iPad without any issues. I just wish they had a longer cord to manually connect the headphones to the audio system of the airplane when I was watching a movie. Luckily I have my old QC20 cancelling noise headphones with me so I used that instead.</p>
+                </div>
+            </div>
+            <div class="Review-Card">
+                <img class="Review-Card-Profile" src="./Images/Profile-Picture-4.jpg" alt="profile"/>
+                <div class="Review-Card-Header">
+                    <p class="Review-Card-Rating">★★★★★</p>
+                    <p class="Review-Card-date">14 weeks ago</p>
+                </div>
+                <div class="Review-Card-Body">
+                    <h3 class="Review-Card-Title">Best quality sounds and product.
+                    </h3>
+                    <p class="Review-Card-Review">I purchased a lifestyle 38 entertainment speaker with receiver year 2005. I upgraded last month with Soundbar 700 and Bass module 700. I was amazed with the power and quality of sound. I recommend bose 100%.</p>
+                </div>
+            </div>
+            <div class="Review-Card">
+                <img class="Review-Card-Profile" src="./Images/Profile-Picture-5.jpeg" alt="profile"/>
+                <div class="Review-Card-Header">
+                    <p class="Review-Card-Rating">★★★☆☆</p>
+                    <p class="Review-Card-date">6 months ago</p>
+                </div>
+                <div class="Review-Card-Body">
+                    <h3 class="Review-Card-Title">Lots of static</h3>
+                    <p class="Review-Card-Review">The left ear has a lot of static and I can't hear anything from that side. It hurts my ears.</p>
+                </div>
+            </div>
+            <div class="Review-Card">
+                <img class="Review-Card-Profile" src="./Images/Profile-Picture-6.jpg" alt="profile"/>
+                <div class="Review-Card-Header">
+                    <p class="Review-Card-Rating">★★★★★</p>
+                    <p class="Review-Card-date">7 days ago</p>
+                </div>
+                <div class="Review-Card-Body">
+                    <h3 class="Review-Card-Title">Bluetooth connectivity and the touch controls</h3>
+                    <p class="Review-Card-Review">Like the ease to connect to a device and the touch controls. Compared to my previous set that connected by wire this is great.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Footer">
+        <div class="Social-Medias">
+            <img class="Socal-Media-Icon" src="./Images/Facebook-Icon.png" alt="Facebook"/>
+            <img class="Socal-Media-Icon" src="./Images/Twitter-Icon.png" alt="Twitter"/>
+            <img class="Socal-Media-Icon" src="./Images/Youtube.Icon.png" alt="Youtube"/>
+            <img class="Socal-Media-Icon" src="./Images/Instagram-Icon.png" alt="Instagram"/>
+        </div>
+    </div>
+    <script src="./MockPage.js"></script>
+</body>
+</html>

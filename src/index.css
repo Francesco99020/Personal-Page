@@ -60,7 +60,16 @@ h4, h3{
 .Main-Body{
     display: flex;
     justify-content: center;
-     align-items: center;
+    align-items:center;
+}
+
+.ProfilePic{
+    align-self: flex-end;
+    display: block;
+    width: auto;
+    height: 90%;
+    margin-left: 10%;
+    margin-bottom: 0;
 }
 
 .Body-Title{

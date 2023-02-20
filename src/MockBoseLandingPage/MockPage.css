@@ -1,0 +1,504 @@
+*{
+    margin-top: 0;
+    margin-left: 0;
+}
+
+html{
+    background-image: linear-gradient(to top,  rgb(25, 25, 25), rgb(66, 66, 66));
+    overflow-x: hidden;
+}
+
+.Header{
+    margin-top: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+.Header-Logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    height: 70%;
+    width: 200px;
+    object-fit: scale-down;
+}
+
+.Header-Buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.Header-Button{
+    cursor: pointer;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Banner{
+    width: 100vw;
+    height: 600px;
+    background-image: linear-gradient(to left, rgb(25, 25, 25), rgb(66, 66, 66));
+    display: flex;
+}
+
+.Banner-Image{
+    object-fit: contain;
+    max-width: 50%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10%;
+}
+
+.Banner-TextHolder{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Banner-Title, .Banner-Subtitle{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+}
+
+.Banner-Title{
+    color: white;
+    font-size: 40px;
+}
+
+.Banner-Subtitle{
+    padding-top: 20px;
+    color: rgb(145, 143, 143);
+    font-size: 35px;
+}
+
+.skicky-header-nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    z-index: 100;
+}
+
+.Sticky-header-button{
+    cursor: pointer;
+}
+
+.About-Section{
+    padding-top: 30px;
+    width: 100vw;
+    background-color: rgb(25, 25, 25);
+}
+
+.About-Main-h1{
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.About-Main-p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+}
+
+.Pricing-Section{
+    width: 100vw;
+    height: 700px;
+}
+
+.Item-Display-Window{
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    border: 5px black solid;
+
+}
+
+.Item-Display-Controls{
+    width: 850px;
+    height: 100px;
+    display: flex;
+    gap: 3px;
+    margin-top: 5px;
+}
+
+.Item-Preview{
+    border: 5px black solid;
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+
+.Left-Arrow, .Right-Arrow{
+    background-color: white;
+}
+
+.Pricing-Section{
+    background-image: url('./Images/Product-Background-Image.jpg');
+    object-fit: contain;
+    background-size: 100%;
+    padding-left: 15%;
+    margin-top: -18px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.display{
+    width: 600px;
+    margin-top: 45.5px;
+}
+
+.Product-Details{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    padding-left: 30px;
+    border-top: 5px black solid;
+    border-right: 5px black solid;
+    border-bottom: 5px black solid;
+}
+
+.Product-Title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.Product-Rating{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Product-Star-Rating{
+    line-height: 51px;
+}
+
+.Product-Rating-Number, .Product-Number-Of-Reviews{
+    line-height: 51px;
+}
+
+.Product-Buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Product-Color-Selection{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.Product-Buy-Now{
+    margin-left: 20px;
+    background-color: black;
+    border-radius: 15px;
+    height: 50px;
+    width: 70%;
+    cursor: pointer;
+}
+
+.Product-Buy-Text{
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.SelectedProductBackground{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.Product-Black{
+    cursor: pointer;
+    margin-top: 3px;
+    width: 38px;
+    height: 38px;
+    border-radius: 25px;
+    background-color: black;
+    border: 3px white solid;
+    z-index: 2;
+}
+
+.Product-White{
+    cursor: pointer;
+    margin-top: 3px;
+    width: 38px;
+    height: 38px;
+    border-radius: 25px;
+    background-color: silver;
+    border: 3px white solid;
+    z-index: 2;
+}
+  /*------------------------------------------------------------*/
+/* Slideshow container */
+.slideshow-container {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+    border-right: 2px black solid;
+    border-top: 5px black solid;
+    border-left: 5px black solid;
+    border-bottom: 5px black solid;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* Number text (1/6 etc) */
+  .numbertext {
+    color: black;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 40px;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /*------------------------------------------------------------*/
+
+
+
+
+
+.Feature-Section{
+    margin-top: -20px;
+}
+
+.Features{
+    background-color: transparent;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.Feature-Text{
+    color: white;
+    width: 50%;
+    height: auto;
+}
+
+.Feature-Header{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100px
+}
+
+.Feature-Title{
+    color: rgb(145, 143, 143);
+    width: 90%;
+    height: 48px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.Feature-Icon{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.Feature-Description{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.Feature-Photo{
+    width: 50%;
+    object-fit: scale-down;
+}
+
+.Review-Section{
+    width: 100%;
+}
+
+.Review-Container{
+    margin-top: 20px;
+}
+
+.Review-Card{
+    background-color: #2c2929;
+}
+
+.Review-Header{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-color: #717171;
+}
+
+.Review-Title{
+    color: white;
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.Review-Subtitle{
+    color: #bbb;
+    font-size: 30px;
+}
+
+.Review-Container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+
+}
+
+.Review-Card{
+    width: 33%;
+}
+
+.Review-Card-Profile{
+    padding-top: 10px;
+    display: block;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    
+}
+
+.Review-Card-Header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Review-Card-Rating, .Review-Card-date{
+    color: white;
+    line-height: 57.6px;
+}
+
+.Review-Card-Rating{
+    font-size: 25px;
+}
+
+.Review-Card-Title{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.Review-Card-Review{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.Footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.Social-Medias{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.Socal-Media-Icon{
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
