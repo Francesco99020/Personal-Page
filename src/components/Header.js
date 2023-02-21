@@ -38,7 +38,6 @@ function Header(){
         <header>
             <h3 className="Title">Francesco</h3>
             <div className="Link-Holder">
-                <h4 className="Header-Links" >Home</h4>
                 <h4 className="Header-Links" onClick={scrollToAboutSection} >About</h4>
                 <h4 className="Header-Links" onClick={scrollToJavaScriptProjectSection} >JavaScript Projects</h4>
                 <h4 className="Header-Links" onClick={scrollToUnityProjectSection} >Unity Projects</h4>
